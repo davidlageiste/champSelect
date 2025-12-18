@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+@font-face {
+  font-family: "DejaVuSans";
+  src: url("/DejaVuSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amarillo";
+  src: url("/amarurgt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html, body, #root {
+  height: 100%;
+  background: transparent;
+}
+
+body{
+  margin: 0;
+  overflow-x: "hidden";
+  font-family: 'Oxanium', sans-serif;
+}
