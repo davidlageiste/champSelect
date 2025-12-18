@@ -30,22 +30,6 @@ export default function ChampSelect() {
   const [timerWidth, setTimerWidth] = useState(100);
   const [timerActive, setTimerActive] = useState(false);
 
-  const phases = {
-    0: ["left", "ban"],
-    1: ["right", "ban"],
-    2: ["left", "ban"],
-    3: ["right", "ban"],
-    4: ["left", "ban"],
-    5: ["right", "ban"],
-    5: ["left", "pick"],
-    6: ["right", "pick"],
-    7: ["left", "pick"],
-    8: ["right", "pick"],
-    9: ["left", "pick"],
-    10: ["right", "pick"],
-    11: ["left", "ban"],
-  }
-
   useEffect(() => {
     subscribeToChampSelect((data) => {
       setTimerActive(true);
@@ -54,9 +38,17 @@ export default function ChampSelect() {
     });
   }, []);
 
+  let team1;
+  let team2;
+
   const side = JSON.parse(localStorage.getItem("side"));
-  const team1 = side.left;
-  const team2 = side.right;
+  if (!side) {
+    team1 = ["Player1", "Player2", "Player3", "Player4", "Player5",]
+    team2 = ["Player6", "Player7", "Player8", "Player9", "Player10",]
+  } else {
+    team1 = side.left;
+    team2 = side.right;
+  }
 
   useEffect(() => {
     if (state && state.bans) {
