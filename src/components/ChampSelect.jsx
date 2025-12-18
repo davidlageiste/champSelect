@@ -42,9 +42,10 @@ export default function ChampSelect() {
   let team2;
 
   const side = JSON.parse(localStorage.getItem("side"));
+
   if (!side) {
-    team1 = ["Player1", "Player2", "Player3", "Player4", "Player5",]
-    team2 = ["Player6", "Player7", "Player8", "Player9", "Player10",]
+    team1 = {players: ["Player1", "Player2", "Player3", "Player4", "Player5"], side: "left" };
+    team2 = {players: ["Player6", "Player7", "Player8", "Player9", "Player10"], side: "right" };
   } else {
     team1 = side.left;
     team2 = side.right;

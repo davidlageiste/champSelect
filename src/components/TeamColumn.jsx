@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import PlayerSlot from "./PlayerSlot";
 
 export default function TeamColumn({ team, side, picks, enemyPicks, bans, enemyBans }) {
-  const [players, setPlayers] = useState();
 
+  console.log("team", team);
   return (
     <div
       style={{
