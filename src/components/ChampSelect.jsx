@@ -3,6 +3,12 @@ import BanRow from "./BanRow";
 import TeamColumn from "./TeamColumn";
 import { subscribeToChampSelect } from "../api/socket";
 
+const logos = {
+  blue: "/blue.png",
+  black: "/black.png",
+  white: "/white.png",
+  red: "/red.png"
+}
 const CHAMPION_NAME_MAP = {
   "Wukong": "MonkeyKing",
   "Nunu & Willump": "Nunu",
@@ -68,6 +74,8 @@ export default function ChampSelect() {
     }
   }, [state]);
 
+  console.log(team1.team);
+
   // Animation du timer
   useEffect(() => {
     if (!timerActive) return;
@@ -113,7 +121,7 @@ export default function ChampSelect() {
             <span style={{ fontSize: "26px" }}>PHASE DE GROUPE</span><br />
             <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "20px" }}>PATCH 25.23</span>
             <div className="" style={{ flexGrow: 1, display: "flex", width: "80%", justifyContent: "space-between", marginTop: "40px" }}>
-              <div>A</div>
+              <div><img style={{filter: 'grayscale(100%)'}} src={`${logos[team1.team]}`} width="120" /></div>
               <div></div>
               <div>C</div>
             </div>

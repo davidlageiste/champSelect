@@ -86,19 +86,19 @@ export default function PlayerSlot({ index, player, side, pick, picks, enemyPick
                 </div>
             }
             {index == 0 && 
-                <img src="/top.png" style={{ opacity: "0.5", width: "40px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
+                <img src="/top.png" style={{ opacity: "0.5", width: "30px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
             }
             {index == 1 && 
-                <img src="/jungle.png" style={{ opacity: "0.5", width: "40px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
+                <img src="/jungle.png" style={{ opacity: "0.5", width: "30px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
             }
             {index == 2 && 
-                <img src="/mid.png" style={{ opacity: "0.5", width: "40px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
+                <img src="/mid.png" style={{ opacity: "0.5", width: "30px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
             }
             {index == 3 && 
-                <img src="/bot.png" style={{ opacity: "0.5", width: "40px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
+                <img src="/bot.png" style={{ opacity: "0.5", width: "30px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
             }
             {index == 4 && 
-                <img src="/supp.png" style={{ opacity: "0.5", width: "40px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
+                <img src="/supp.png" style={{ opacity: "0.5", width: "30px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} />
             }
 
             {/* Texte du joueur */}
